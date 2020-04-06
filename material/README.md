@@ -4,12 +4,15 @@ Preparation
 -----------
 * Download and use [Slicer 4.10.2](https://download.slicer.org/)
 * Download template files  <a href="https://drive.google.com/open?id=12-GtUhNBMlbASZRqK1EQeg7nz1m_7uuz" target="_blank">here</a>
-  * D99.nii.gz
-  * inia19.nii.gz
-  * macaqueMNI.nii.gz
-  * NMTv1.3.nii.gz
-  * yerkes19.nii.gz
-  
+
+|       file       |    name   |
+|------------------|-----------|
+|D99.nii.gz        |d99        |
+|inia19.nii.gz     |inia19     |
+|macaqueMNI.nii.gz |macaqueMNI |
+|NMTv1.3.nii.gz    |nmtv1.3    |
+|yerkes19.nii.gz   |yerkes19   |
+
 Naming Scheme for Fiducial Files
 --------------------------------
 * [VolumeID]\_[Contrast]\_[Rater]\_[N] (e.g. macaqueMNI_T1_JL_01)
