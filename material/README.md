@@ -66,26 +66,24 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ----------------------------
 
 ### **1. AC [midline]**
-
-  * Place at the center of the commissure. 
-  * **Name:** 1
-  * **Description:** AC
   
-<p align="center">
-  <img src="./img/01_AC.png" title="01. Anterior Commissure">
-</p>
+>**Name:** 1<br>
+>**Description:** AC
+
+* Place at the center of the commissure. 
+  
+![01. Anterior Commissure](./img/01_AC.png)
 
 ----------------------------
 
 ### **2. PC [midline]**
 
-  * Place at the center of the commissure
-  * **Name:** 2
-  * **Description:** PC
+>**Name:** 2<br>
+>**Description:** PC
 
-<p align="center">
-  <img src="./img/02_PC.png" title="02. Posterior Commissure">
-</p>
+  * Place at the center of the commissure
+
+![02. Posterior Commissure](./img/02_PC.png)
 
 ----------------------------
 
