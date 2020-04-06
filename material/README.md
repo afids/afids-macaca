@@ -3,10 +3,16 @@
 Preparation
 -----------
 * Download and use [Slicer 4.10.2](https://download.slicer.org/)
-
+* Download template files  <a href="https://drive.google.com/open?id=12-GtUhNBMlbASZRqK1EQeg7nz1m_7uuz" target="_blank">here</a>
+  * D99.nii.gz
+  * inia19.nii.gz
+  * macaqueMNI.nii.gz
+  * NMTv1.3.nii.gz
+  * yerkes19.nii.gz
+  
 Naming Scheme for Fiducial Files
 --------------------------------
-* [VolumeID]\_[Contrast]\_[Rater]\_[N] (e.g. macaque25modelMNI_T1_JL_01.fcsv)
+* [VolumeID]\_[Contrast]\_[Rater]\_[N] (e.g. macaqueMNI_T1_JL_01)
 
   * **[VolumeID]** = the identifier for the volume on which you are performing the fiducial placements; for the tutorial it will be a well known macaque MRI templates:
     * Colin27: average of 25 adult macaque monkeys (18 Macaca Fascicularis, 7 Macaca Mulatta)
@@ -17,27 +23,26 @@ Naming Scheme for Fiducial Files
 AC-PC Placement
 ---------------
 Download assigned volume/template from github repository.
-Go to Markups Module and create Module named **ACPC\_[VolumeID]\_[Rater]\_[N]**. Place **AC** and **PC** landmarks:
+Go to Markups Module and create markups list entitled **ACPC\_[VolumeID]\_[Contrast]\_[Rater]\_[N]**. Place **AC** and **PC** landmarks:
 1. AC = anterior commissure (center)
 2. PC = posterior commissure (center)
 
 Create new AC-PC transform
 --------------------------
-Create a new Markup list entitled **Fid32\_[VolumeID]\_[Rater]\_[N]**.
-Create a new Markup list entitled midline.
+Create a new markups list entitled **Fid32\_[VolumeID]\_[Contrast]\_[Rater]\_[N]**.
+Create a new markups list entitled **midline**.
 
 To create a new AC-PC Transform you must place AC and PC fiducial markers in previous step. 
-1. Copy AC and PC markers from ACPC to the midline list.
-2. Go back to the midline list and place a fiducial marker in the infracollicular sulcus (point 3)
+1. Copy AC and PC markers from **ACPC** to the **midline** markups list.
+2. Go back to the **midline** markups list and place a fiducial marker in the infracollicular sulcus (point 3)
 3. Place another fiducial marker at the Genu of CC (point 19)
-4. You should now have AC and PC in the ACPC markups list and AC, PC, infracollicular sulcus and Genu of CC in the midline list
-5. Under modules select Registration  Specialized  ACPC Transform. 
-6. In the Transform Panel, under ACPC Line select the ACPC markups list, under Midline select the midline list, and under Output transform select Create new linear transform as… and name it Output transform
-7. Click apply at the bottom of the window
-8. Next under modules go to Data. Beside the image volume select the ‘eye’ icon to turn the volume back on.
+4. You should now have AC and PC in the **ACPC** markups list and AC, PC, infracollicular sulcus and Genu of CC in the **midline** markups list
+5. Under modules select Registration --> Specialized --> ACPC Transform. 
+6. In the Transform Panel, under ACPC Line select the **ACPC** markups list, under Midline select the **midline** markups list, and under Output transform select **"Create new linear transform as…"** and name it **Output transform**.
+7. Click **apply** at the bottom of the window.
+8. **Note: if the volume turns off** --> under modules go to Data. Beside the image volume select the ‘eye’ icon to turn the volume back on.
 9. Next under Modules go to Transforms and under Active Transform dropdown tab select the create Output transform (if not already selected). 
-10. Under Apply Transform select all 4 items (i.e macaque25modelMNI_T1w_GGl_20190801, ACPC, Midline and FID32) and transfer them to the transformed side. 
-
+10. Under Apply Transform select all 4 items (i.e **macaqueMNI**, **ACPC_macaqueMNI_T1_GG_0l**, **midline**, and **Fid32_macaqueMNI_T1_GG_0l**) and transfer them to the transformed side. 
 
 General Fiducial Placement Strategies
 -------------------------------------
@@ -54,12 +59,7 @@ to prevent yourself from displacing it later. **NOTE: there is no UNDO feature f
 
 Placement of Fiducial Series
 ----------------------------
-Create a new Markup list entitled **Fid32\_[VolumeID]\_[Rater]\_[N]**. Click on **ACPC Line** and copy over AC and PC to your new list by 
-right clicking each fiducial, choosing "Copy fiducial to another list", and selecting **Fid32\_[VolumeID]\_[Rater]\_[N]**. Place the 
-following **30 fiducials**, enter the number corresponding to the fiducial in the Name textbox and enter the underlined anatomical 
-structure in the corresponding Description textbox:
-
-When placing the fiducials make sure you are on the **Fid32\_[VolumeID]\_[Rater]\_[N]** markup list. Click on **midline** and copy over AC, PC along with the other points to your FID32 list by selecting all fiducials, right click and choosing "Copy”. Select **Fid32\_[VolumeID]\_[Rater]\_[N]**. Place each of the **fiducials** in the markups list entering the associated fiducial number in **Name** and enter the **underlined** name in the **Description textbox**.
+Copy points from the **ACPC** markups list to the **Fid32\_[VolumeID]\_[Contrast]\_[Rater]\_[N]** markups list. Copy over AC and PC to your **Fid32** markups list by right clicking each fiducial, choosing "Copy fiducial to another list", and selecting **Fid32\_[VolumeID]\_[Contrast]\_[Rater]\_[N]**. Place the remaining **30 fiducials**, enter the number corresponding to the fiducial in the **Name** textbox and enter the description in the corresponding **Description** textbox. When placing the fiducials make sure you are on the **Fid32\_[VolumeID]\_[Contrast]\_[Rater]\_[N]** markup list.
 
 To help with monitoring the current location of the pointer, toggle on the **Slice intersection** under **Toggle crosshair visibility**.
 
