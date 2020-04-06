@@ -187,7 +187,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
   * Most superior point of cerebellar vermis; one of the vermian lobules
   * Axial view will allow you to choose the most superior part of the vermis; Scroll through this view while remaining in midline until you reach the apex. 
   * **Name:** 10
-  * **Description:** Culmen
+  * **Description:** culmen
 
 <p align="center">
   <img src="./img/10_culmen.png" title="10. Culmen">
@@ -201,7 +201,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
   * Using the coronal view get to the midpoint between the mamillary bodies. 
   * Remember to place at the border of the grey matter. Refine this using axial view where border is most clear.
   * **Name:** 11
-  * **Description:** Intermammillary sulcus
+  * **Description:** intermammillary sulcus
 
 <p align="center">
   <img src="./img/11_IMS.png" title="11. Intermammillary sulcus">
@@ -301,7 +301,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
   * Optimize using coronal view as most anterior point of the corpus callosum on coronal slice.
   * Midline vasculatures are prominent in this region. Adjusting contrast allows for differentiation between grey matter and vessels. Refine fiducial using axial view. 
   * **Name:** 19
-  * **Description:** Genu of CC
+  * **Description:** genu of CC
 
 <p align="center">
   <img src="./img/19_Genu.png" title="19. Genu of Corpus Callosum">
@@ -314,7 +314,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
   * Jump to AC and place using sagittal view.
   * Proceed posterior and optimize point using coronal view as the in inferior-most point on coronal section. Refine the border using axial view.
   * **Name:** 20
-  * **Description:** Splenium of CC
+  * **Description:** splenium of CC
 
 <p align="center">
   <img src="./img/20_splenium.png" title="20. Splenium of Corpus Callosum">
