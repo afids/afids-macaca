@@ -330,139 +330,129 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 ### **23. Right superior AM temporal horn**
 
-  * alias: Rhoton's right uncal recess
-  * Jump to AC, proceeding posterior while monitoring sagittal view until slice intersection is touching posterior of hypothalamus or anterior of the brainstem in sagittal view.
-  * Proceed lateral while monitoring the coronal view. Place fiducial at the superior hippocampal-amygdalar transition area (HATA). Verify in the axial view.
-  * NOTE: there is also an inferior anteromedial temporal horn
-  * Rhoton's uncal recess:
-    * "narrow medially projecting space between hippocampal head & ventricular surface of amygdala located lateral to uncal apex")
-  * Place at the boundary of CSF and brain
-  * **Name:** 23
-  * **Description:** R superior AM temporal horn
+> **Name:** 23 <br>
+> **Description:** R superior AM temporal horn
 
-<p align="center">
-  <img src="./img/23_RSAMTH.png" title="23. R superior AM temporal horn">
-</p>
+* alias: Rhoton's right uncal recess
+* Jump to AC, proceeding posterior while monitoring sagittal view until slice intersection is touching posterior of hypothalamus or anterior of the brainstem in sagittal view.
+* Proceed lateral while monitoring the coronal view. Place fiducial at the superior hippocampal-amygdalar transition area (HATA). Verify in the axial view.
+* NOTE: there is also an inferior anteromedial temporal horn
+* Rhoton's uncal recess:
+  * "narrow medially projecting space between hippocampal head & ventricular surface of amygdala located lateral to uncal apex")
+* Place at the boundary of CSF and brain
+
+![23. R superior AM temporal horn](./img/23_RSAMTH.png)
 
 ----------------------------
 
 ### **24. Left superior AM temporal horn**
-  
-  * alias: Rhoton's left uncal recess
-  * As in 23
-  * **Name:** 24
-  * **Description:** L superior AM temporal horn
 
-<p align="center">
-  <img src="./img/24_LSAMTH.png" title="24. L superior AM temporal horn">
-</p>
+> **Name:** 24 <br>
+> **Description:** L superior AM temporal horn
+
+* alias: Rhoton's left uncal recess
+* As in 23
+
+![24. L superior AM temporal horn](./img/24_LSAMTH.png)
 
 ----------------------------
 
 ### **25. Right inferior AM temporal horn**
 
-  * Jump to center of AC. Scrolling posterior while monitoring sagittal view, place pointer in the CSF in between AC and the Thalamus. Verify in the axial view that the point is in center of the CSF in that view.
-  * While monitoring the coronal view, scroll laterally until the sagitall intersection reaches ventricle under the amygdaloid nuclei. The ventricle should appear in the sagittal view as a small opening at this point. 
-  * Verify that the fiducial is place at the junction of the ventricle-grey matter in the axial view. 
-  * **Name:** 25
-  * **Description:** R inferior AM temporal horn
+> **Name:** 25 <br>
+> **Description:** R inferior AM temporal horn
 
-<p align="center">
-  <img src="./img/25_RIAMTH.png" title="25. R inferior AM temporal horn">
-</p>
+* Jump to center of AC. Scrolling posterior while monitoring sagittal view, place pointer in the CSF in between AC and the Thalamus. Verify in the axial view that the point is in center of the CSF in that view.
+* While monitoring the coronal view, scroll laterally until the sagitall intersection reaches ventricle under the amygdaloid nuclei. The ventricle should appear in the sagittal view as a small opening at this point. 
+* Verify that the fiducial is place at the junction of the ventricle-grey matter in the axial view. 
+
+![25. R inferior AM temporal horn](./img/25_RIAMTH.png)
 
 ----------------------------
 
 ### **26. Left inferior AM temporal horn**
 
-  * Like in 25
-  * Jump to 22 (left AL temporal horn) and scroll the find the most medial showing of the CSF
-  * **Name:** 26
-  * **Description:** L inferior AM temporal horn
+> **Name:** 26 <br>
+> **Description:** L inferior AM temporal horn
 
-<p align="center">
-  <img src="./img/26_LIAMTH.png" title="26. L inferior AM temporal horn">
-</p>
+* Like in 25
+* Jump to 22 (left AL temporal horn) and scroll the find the most medial showing of the CSF
+
+![26. L inferior AM temporal horn](./img/26_LIAMTH.png)
 
 ----------------------------
 
 ### **27. Right indusium griseum origin**
 
-  * Defined on sagittal slice at takeoff from posterior hippocampus below splenium
-  * * Jump to AC. In the sagittal view place the slice intersection at the posterior border of splenium in the midline.
-  * Begin on the sagittal view (make sure the view is on the right side), scroll back and forth to find the point where the tail of the hippocampus begins to become pointed and "takeoff"
-  * Verify that the fiducial is at the junction of white and grey matter.
+> **Name:** 27 <br>
+> **Description:** R indusium griseum origin
 
-  * **Name:** 27
-  * **Description:** R indusium griseum origin
+* Defined on sagittal slice at takeoff from posterior hippocampus below splenium
+* Jump to AC. In the sagittal view place the slice intersection at the posterior border of splenium in the midline.
+* Begin on the sagittal view (make sure the view is on the right side), scroll back and forth to find the point where the tail of the hippocampus begins to become pointed and "takeoff"
+* Verify that the fiducial is at the junction of white and grey matter.
 
-<p align="center">
-  <img src="./img/27_RIGO.png" title="27. R indusium griseum origin">
-</p>
+![27. R indusium griseum origin](./img/27_RIGO.png)
 
 ----------------------------
 
 ### **28. Left indusium griseum origin**
 
-  * As in 27
-  * **Name:** 28
-  * **Description:** L indusium griseum origin
+> **Name:** 28 <br>
+> **Description:** L indusium griseum origin
 
-<p align="center">
-  <img src="./img/28_LIGO.png" title="28. L indusium griseum origin">
-</p>
+* As in 27
+
+![28. L indusium griseum origin](./img/28_LIGO.png)
 
 ----------------------------
 
 ### **29. Right ventral occipital horn**
 
-  * Defined on ventral/inferior portion of last visible coronal slice with occipital horn
-  * If it is hard to see on the coronal view then you can make the first placement using the axial view (make sure the view is on the right side of the brain).
-  * Optimize using other views
-  * **Name:** 29
-  * **Description:** R ventral occipital horn
+> **Name:** 29 <br>
+> **Description:** R ventral occipital horn
 
-<p align="center">
-  <img src="./img/29_RVOH.png" title="29. R ventral occipital horn">
-</p>
+* Defined on ventral/inferior portion of last visible coronal slice with occipital horn
+* If it is hard to see on the coronal view then you can make the first placement using the axial view (make sure the view is on the right side of the brain).
+* Optimize using other views
+
+![29. R ventral occipital horn](./img/29_RVOH.png)
 
 ----------------------------
 
 ### **30. Left ventral occipital horn**
 
-  * As in 29
-  * **Name:** 30
-  * **Description:** L ventral occipital horn
+> **Name:** 30 <br>
+> **Description:** L ventral occipital horn
 
-<p align="center">
-  <img src="./img/30_LVOH.png" title="30. L ventral occipital horn">
-</p>
+* As in 29
+
+![30. L ventral occipital horn](./img/30_LVOH.png)
 
 ----------------------------
 
 ### **31. Right olfactory sulcal fundus**
 
-  * Jump to Genu of Corpus Collosum (#17). 
-  * Ensuring the view is on the right side of the brain, scroll back and forth in the sagittal view until you find the most anterior aspect of genu on the right hemisphere. (Typically before Genu becomes continuous with other white matter structures).
-  * Monitoring the axial view proceed ventral until the fundas is reached. Verify using the coronal view.
-  * Sulcal fundus = at depth of sulcus and boundary of gray matter-white matter
-  * Posterior and most superior portion visible on axial slice
-  * **Name:** 31
-  * **Description:** R olfactory sulcal fundus
+> **Name:** 31 <br>
+> **Description:** R olfactory sulcal fundus
 
-<p align="center">
-  <img src="./img/31_ROSF.png" title="31. R olfactory sulcal fundus">
-</p>
+* Jump to Genu of Corpus Collosum (#17). 
+* Ensuring the view is on the right side of the brain, scroll back and forth in the sagittal view until you find the most anterior aspect of genu on the right hemisphere. (Typically before Genu becomes continuous with other white matter structures).
+* Monitoring the axial view proceed ventral until the fundas is reached. Verify using the coronal view.
+* Sulcal fundus = at depth of sulcus and boundary of gray matter-white matter
+* Posterior and most superior portion visible on axial slice
+
+![31. R olfactory sulcal fundus](./img/31_ROSF.png)
 
 ----------------------------
 
 ### **32. Left olfactory sulcal fundus**
 
-  * As in 31
-  * **Name:** 32
-  * **Description:** L olfactory sulcal fundus
+> **Name:** 32 <br>
+> **Description:** L olfactory sulcal fundus
 
-<p align="center">
-  <img src="./img/32_LOSF.png" title="32. L olfactory sulcal fundus ">
-</p>
+* As in 31
+
+![32. L olfactory sulcal fundus](./img/32_LOSF.png)
+
 
