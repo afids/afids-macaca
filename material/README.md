@@ -72,6 +72,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
   
 > **Name:** 1<br>
 > **Description:** AC
+> **Acronym:** AC
 
 * Place at the center of the commissure. 
   
@@ -83,6 +84,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 2<br>
 > **Description:** PC
+> **Acronym:** PC
 
 * Place at the center of the commissure
 
@@ -94,7 +96,8 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 3<br>
 > **Description:** infracollicular sulcus
-  
+> **Acronym:** ICS
+
 * Inferior part of sulcus of inferior colliculi at the midline junction of inferior colliculi
 * Inferior most boundary of longitudinal intercollicular sulcus
 
@@ -106,6 +109,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 4<br>
 > **Description:** PMJ
+> **Acronym:** PMJ
 
 * At the intraventricular junction but because the junction tapers off gradually, choose the ventral/inferior/pontine side of the junction. Using the sagittal view, find the junction at midline, next verify that you are at the junction by checking the axial view.
 
@@ -117,6 +121,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 5<br>
 > **Description:** superior interpeduncular fossa
+> **Acronym:** SIPF
 
 * Most superior axial slice showing the interpeduncular fossa
 * Use coronal slice to help optimize location at boundary of 3rd ventricle and surrounding brain
@@ -130,6 +135,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 6<br>
 > **Description:** R superior LMS
+> **Acronym:** RSLMS
 
 * Start at sagittal slices at the posterior boundry of PC.
 * Localize using axial slices; at boundary of CSF and brain
@@ -143,6 +149,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 7<br>
 > **Description:** L superior LMS
+> **Acronym:** LSLMS
 
 * As in 6
 
@@ -154,6 +161,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 8<br>
 > **Description:** R inferior LMS
+> **Acronym:** RILMS
 
 * Start at sagittal slices at the posterior boundry of PC.
 * Using axial section, level the slice intersection to the Pontomesencephalic Junction(3rd fiducial)
@@ -168,6 +176,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 9<br>
 > **Description:** L inferior LMS
+> **Acronym:** LILMS
 
 * As in 8
 
@@ -179,6 +188,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 10 <br>
 > **Description:** culmen
+> **Acronym:** CUL
 
 * Jump to AC or another midline AFID to get to the mid-sagittal slice, then place using the sagittal view
 * Most superior point of cerebellar vermis; one of the vermian lobules
@@ -192,6 +202,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 11 <br>
 > **Description:** intermammillary sulcus
+> **Acronym:** IMS
 
 * Click to jump to AC landmark and place using the sagittal view 
 * Using the coronal view get to the midpoint between the mamillary bodies. 
@@ -205,6 +216,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 12 <br>
 > **Description:** R MB
+> **Acronym:** RMB
 
 * Place at the center of the mammillary body
 
@@ -216,6 +228,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 13 <br>
 > **Description:** L MB
+> **Acronym:** LMB
 
 * As in 12
 
@@ -227,6 +240,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 14 <br>
 > **Description:** pineal gland
+> **Acronym:** PG
 
 * Click to jump to the AC landmark on the sagittal view and localize the most superior border of AC on sagittal view, then proceed to go posterior until past PC.
 * Place AFID in the middle of gland (use all views to correctly place this point)
@@ -240,6 +254,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 15 <br>
 > **Description:** R LV at AC
+> **Acronym:** RLVAC
 
 * Defined at same coronal slice as AC (jump to it)
 
@@ -251,6 +266,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 16 <br>
 > **Description:** L LV at AC
+> **Acronym:** LLVAC
 
 * As in 15
 
@@ -262,6 +278,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 17 <br>
 > **Description:** R LV at PC
+> **Acronym:** RLVPC
 
 * Defined at same coronal slice as PC (jump to it)
 
@@ -273,6 +290,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 18 <br>
 > **Description:** L LV at PC
+> **Acronym:** LLVPC
 
 * As in 17
 
@@ -284,6 +302,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 19 <br>
 > **Description:** genu of CC
+> **Acronym:** GENU
 
 * Jump to AC and place using sagittal view
 * Optimize using coronal view as most anterior point of the corpus callosum on coronal slice.
@@ -297,6 +316,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 20 <br>
 > **Description:** splenium of CC
+> **Acronym:** SPLE
 
 * Jump to AC and place using sagittal view.
 * Proceed posterior and optimize point using coronal view as the in inferior-most point on coronal section. Refine the border using axial view.
@@ -309,6 +329,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 21 <br>
 > **Description:** R AL temporal horn
+> **Acronym:** RALTH
 
 * Jump to AC and using sagittal view locate the posterior border of AC.
 * Navigate laterally using sagittal view and locate anterior-most (and lateral) point of temporal horn.
@@ -324,6 +345,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 22 <br>
 > **Description:** L AL temporal horn
+> **Acronym:** LALTH
 
 * As in 21
 
@@ -335,6 +357,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 23 <br>
 > **Description:** R superior AM temporal horn
+> **Acronym:** RSAMTH
 
 * alias: Rhoton's right uncal recess
 * Jump to AC, proceeding posterior while monitoring sagittal view until slice intersection is touching posterior of hypothalamus or anterior of the brainstem in sagittal view.
@@ -352,6 +375,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 24 <br>
 > **Description:** L superior AM temporal horn
+> **Acronym:** LSAMTH
 
 * alias: Rhoton's left uncal recess
 * As in 23
@@ -364,6 +388,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 25 <br>
 > **Description:** R inferior AM temporal horn
+> **Acronym:** RIAMTH
 
 * Jump to center of AC. Scrolling posterior while monitoring sagittal view, place pointer in the CSF in between AC and the Thalamus. Verify in the axial view that the point is in center of the CSF in that view.
 * While monitoring the coronal view, scroll laterally until the sagitall intersection reaches ventricle under the amygdaloid nuclei. The ventricle should appear in the sagittal view as a small opening at this point. 
@@ -377,6 +402,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 26 <br>
 > **Description:** L inferior AM temporal horn
+> **Acronym:** LIAMTH
 
 * Like in 25
 * Jump to 22 (left AL temporal horn) and scroll the find the most medial showing of the CSF
@@ -389,6 +415,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 27 <br>
 > **Description:** R indusium griseum origin
+> **Acronym:** RIGO
 
 * Defined on sagittal slice at takeoff from posterior hippocampus below splenium
 * Jump to AC. In the sagittal view place the slice intersection at the posterior border of splenium in the midline.
@@ -403,6 +430,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 28 <br>
 > **Description:** L indusium griseum origin
+> **Acronym:** LIGO
 
 * As in 27
 
@@ -414,6 +442,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 29 <br>
 > **Description:** R ventral occipital horn
+> **Acronym:** RVOH
 
 * Defined on ventral/inferior portion of last visible coronal slice with occipital horn
 * If it is hard to see on the coronal view then you can make the first placement using the axial view (make sure the view is on the right side of the brain).
@@ -427,6 +456,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 30 <br>
 > **Description:** L ventral occipital horn
+> **Acronym:** LVOH
 
 * As in 29
 
@@ -438,6 +468,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 31 <br>
 > **Description:** R olfactory sulcal fundus
+> **Acronym:** ROSF
 
 * Jump to Genu of Corpus Collosum (#19). 
 * Ensuring the view is on the right side of the brain, scroll back and forth in the sagittal view until you find the most anterior aspect of genu on the right hemisphere. (Typically before Genu becomes continuous with other white matter structures).
@@ -453,6 +484,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 > **Name:** 32 <br>
 > **Description:** L olfactory sulcal fundus
+> **Acronym:** LOSF
 
 * As in 31
 
