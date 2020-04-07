@@ -70,8 +70,8 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 ### **1. AC [midline]**
   
-> **Name:** 1<br>
-> **Description:** AC
+> **Name:** 1 <br>
+> **Description:** AC <br>
 > **Acronym:** AC
 
 * Place at the center of the commissure. 
@@ -82,8 +82,8 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 ### **2. PC [midline]**
 
-> **Name:** 2<br>
-> **Description:** PC
+> **Name:** 2 <br>
+> **Description:** PC <br>
 > **Acronym:** PC
 
 * Place at the center of the commissure
@@ -94,8 +94,8 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 ### **3. infracollicular sulcus [midline]**
 
-> **Name:** 3<br>
-> **Description:** infracollicular sulcus
+> **Name:** 3 <br>
+> **Description:** infracollicular sulcus <br>
 > **Acronym:** ICS
 
 * Inferior part of sulcus of inferior colliculi at the midline junction of inferior colliculi
@@ -107,8 +107,8 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 ### **4. Pontomesencephalic junction [midline]**
 
-> **Name:** 4<br>
-> **Description:** PMJ
+> **Name:** 4 <br>
+> **Description:** PMJ <br>
 > **Acronym:** PMJ
 
 * At the intraventricular junction but because the junction tapers off gradually, choose the ventral/inferior/pontine side of the junction. Using the sagittal view, find the junction at midline, next verify that you are at the junction by checking the axial view.
@@ -119,8 +119,8 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 ### **5. Superior interpeduncular fossa [midline]**
 
-> **Name:** 5<br>
-> **Description:** superior interpeduncular fossa
+> **Name:** 5 <br>
+> **Description:** superior interpeduncular fossa <br>
 > **Acronym:** SIPF
 
 * Most superior axial slice showing the interpeduncular fossa
@@ -133,8 +133,8 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 ### **6. Right superior lateral mesencephalic sulcus**
 
-> **Name:** 6<br>
-> **Description:** R superior LMS
+> **Name:** 6 <br>
+> **Description:** R superior LMS <br>
 > **Acronym:** RSLMS
 
 * Start at sagittal slices at the posterior boundry of PC.
@@ -147,8 +147,8 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 ### **7. Left superior lateral mesencephalic sulcus**
 
-> **Name:** 7<br>
-> **Description:** L superior LMS
+> **Name:** 7 <br>
+> **Description:** L superior LMS <br>
 > **Acronym:** LSLMS
 
 * As in 6
@@ -159,8 +159,8 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 ### **8. Right inferior lateral mesencephalic sulcus**
 
-> **Name:** 8<br>
-> **Description:** R inferior LMS
+> **Name:** 8 <br>
+> **Description:** R inferior LMS <br>
 > **Acronym:** RILMS
 
 * Start at sagittal slices at the posterior boundry of PC.
@@ -174,8 +174,8 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 ### **9. Left inferior lateral mesencephalic sulcus**
 
-> **Name:** 9<br>
-> **Description:** L inferior LMS
+> **Name:** 9 <br>
+> **Description:** L inferior LMS <br>
 > **Acronym:** LILMS
 
 * As in 8
@@ -187,7 +187,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **10. Culmen [midline]**
 
 > **Name:** 10 <br>
-> **Description:** culmen
+> **Description:** culmen <br>
 > **Acronym:** CUL
 
 * Jump to AC or another midline AFID to get to the mid-sagittal slice, then place using the sagittal view
@@ -201,7 +201,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **11. Intermammillary sulcus [midline]**
 
 > **Name:** 11 <br>
-> **Description:** intermammillary sulcus
+> **Description:** intermammillary sulcus <br>
 > **Acronym:** IMS
 
 * Click to jump to AC landmark and place using the sagittal view 
@@ -215,7 +215,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **12. Right mammillary body**
 
 > **Name:** 12 <br>
-> **Description:** R MB
+> **Description:** R MB <br>
 > **Acronym:** RMB
 
 * Place at the center of the mammillary body
@@ -227,7 +227,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **13. Left mamillary body**
 
 > **Name:** 13 <br>
-> **Description:** L MB
+> **Description:** L MB <br>
 > **Acronym:** LMB
 
 * As in 12
@@ -239,7 +239,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **14. Pineal gland [midline]**
 
 > **Name:** 14 <br>
-> **Description:** pineal gland
+> **Description:** pineal gland <br>
 > **Acronym:** PG
 
 * Click to jump to the AC landmark on the sagittal view and localize the most superior border of AC on sagittal view, then proceed to go posterior until past PC.
@@ -253,7 +253,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **15. Right lateral aspect of frontal horn at AC**
 
 > **Name:** 15 <br>
-> **Description:** R LV at AC
+> **Description:** R LV at AC <br>
 > **Acronym:** RLVAC
 
 * Defined at same coronal slice as AC (jump to it)
@@ -265,7 +265,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **16. Left lateral aspect of frontal horn at AC**
 
 > **Name:** 16 <br>
-> **Description:** L LV at AC
+> **Description:** L LV at AC <br>
 > **Acronym:** LLVAC
 
 * As in 15
@@ -277,7 +277,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **17. Right lateral aspect of frontal horn on at PC**
 
 > **Name:** 17 <br>
-> **Description:** R LV at PC
+> **Description:** R LV at PC <br>
 > **Acronym:** RLVPC
 
 * Defined at same coronal slice as PC (jump to it)
@@ -289,7 +289,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **18. Left lateral aspect of frontal horn at PC**
 
 > **Name:** 18 <br>
-> **Description:** L LV at PC
+> **Description:** L LV at PC <br>
 > **Acronym:** LLVPC
 
 * As in 17
@@ -301,7 +301,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **19. Genu of corpus callosum [midline]**
 
 > **Name:** 19 <br>
-> **Description:** genu of CC
+> **Description:** genu of CC <br>
 > **Acronym:** GENU
 
 * Jump to AC and place using sagittal view
@@ -315,7 +315,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **20. Splenium of the corpus callosum [midline]**
 
 > **Name:** 20 <br>
-> **Description:** splenium of CC
+> **Description:** splenium of CC <br>
 > **Acronym:** SPLE
 
 * Jump to AC and place using sagittal view.
@@ -328,7 +328,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **21. Right anterolateral temporal horn**
 
 > **Name:** 21 <br>
-> **Description:** R AL temporal horn
+> **Description:** R AL temporal horn <br>
 > **Acronym:** RALTH
 
 * Jump to AC and using sagittal view locate the posterior border of AC.
@@ -344,7 +344,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **22. Left anterolateral temporal horn**
 
 > **Name:** 22 <br>
-> **Description:** L AL temporal horn
+> **Description:** L AL temporal horn <br>
 > **Acronym:** LALTH
 
 * As in 21
@@ -356,7 +356,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **23. Right superior AM temporal horn**
 
 > **Name:** 23 <br>
-> **Description:** R superior AM temporal horn
+> **Description:** R superior AM temporal horn <br>
 > **Acronym:** RSAMTH
 
 * alias: Rhoton's right uncal recess
@@ -374,7 +374,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **24. Left superior AM temporal horn**
 
 > **Name:** 24 <br>
-> **Description:** L superior AM temporal horn
+> **Description:** L superior AM temporal horn <br>
 > **Acronym:** LSAMTH
 
 * alias: Rhoton's left uncal recess
@@ -387,7 +387,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **25. Right inferior AM temporal horn**
 
 > **Name:** 25 <br>
-> **Description:** R inferior AM temporal horn
+> **Description:** R inferior AM temporal horn <br>
 > **Acronym:** RIAMTH
 
 * Jump to center of AC. Scrolling posterior while monitoring sagittal view, place pointer in the CSF in between AC and the Thalamus. Verify in the axial view that the point is in center of the CSF in that view.
@@ -401,7 +401,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **26. Left inferior AM temporal horn**
 
 > **Name:** 26 <br>
-> **Description:** L inferior AM temporal horn
+> **Description:** L inferior AM temporal horn <br>
 > **Acronym:** LIAMTH
 
 * Like in 25
@@ -414,7 +414,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **27. Right indusium griseum origin**
 
 > **Name:** 27 <br>
-> **Description:** R indusium griseum origin
+> **Description:** R indusium griseum origin <br>
 > **Acronym:** RIGO
 
 * Defined on sagittal slice at takeoff from posterior hippocampus below splenium
@@ -429,7 +429,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **28. Left indusium griseum origin**
 
 > **Name:** 28 <br>
-> **Description:** L indusium griseum origin
+> **Description:** L indusium griseum origin <br>
 > **Acronym:** LIGO
 
 * As in 27
@@ -441,7 +441,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **29. Right ventral occipital horn**
 
 > **Name:** 29 <br>
-> **Description:** R ventral occipital horn
+> **Description:** R ventral occipital horn <br>
 > **Acronym:** RVOH
 
 * Defined on ventral/inferior portion of last visible coronal slice with occipital horn
@@ -455,7 +455,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **30. Left ventral occipital horn**
 
 > **Name:** 30 <br>
-> **Description:** L ventral occipital horn
+> **Description:** L ventral occipital horn <br>
 > **Acronym:** LVOH
 
 * As in 29
@@ -467,7 +467,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **31. Right olfactory sulcal fundus**
 
 > **Name:** 31 <br>
-> **Description:** R olfactory sulcal fundus
+> **Description:** R olfactory sulcal fundus <br>
 > **Acronym:** ROSF
 
 * Jump to Genu of Corpus Collosum (#19). 
@@ -483,7 +483,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 ### **32. Left olfactory sulcal fundus**
 
 > **Name:** 32 <br>
-> **Description:** L olfactory sulcal fundus
+> **Description:** L olfactory sulcal fundus <br>
 > **Acronym:** LOSF
 
 * As in 31
