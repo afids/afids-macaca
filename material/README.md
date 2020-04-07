@@ -439,7 +439,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 > **Name:** 31 <br>
 > **Description:** R olfactory sulcal fundus
 
-* Jump to Genu of Corpus Collosum (#17). 
+* Jump to Genu of Corpus Collosum (#19). 
 * Ensuring the view is on the right side of the brain, scroll back and forth in the sagittal view until you find the most anterior aspect of genu on the right hemisphere. (Typically before Genu becomes continuous with other white matter structures).
 * Monitoring the axial view proceed ventral until the fundas is reached. Verify using the coronal view.
 * Sulcal fundus = at depth of sulcus and boundary of gray matter-white matter
