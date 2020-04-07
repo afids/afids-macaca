@@ -2,7 +2,7 @@
 
 Preparation
 -----------
-* Download and use [Slicer 4.10.2](https://download.slicer.org/)
+* Download and use [3D Slicer 4.10.2](https://download.slicer.org/) (for the time being **DO NOT** use version 4.11 or above)
 * Download template files  <a href="https://drive.google.com/open?id=12-GtUhNBMlbASZRqK1EQeg7nz1m_7uuz" target="_blank">here</a>
 
 |       file       |    name   |
