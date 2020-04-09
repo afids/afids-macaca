@@ -1,0 +1,33 @@
+name,description,side
+1,AC,midline
+2,PC,midline
+3,infracollicular sulcus,midline
+4,PMJ,midline
+5,superior interpeduncular fossa,midline
+6,R superior LMS,right
+7,L superior LMS,left
+8,R inferior LMS,right
+9,L inferior LMS,left
+10,culmen,midline
+11,intermammillary sulcus,midline
+12,R MB,right
+13,L MB,left
+14,pineal gland,midline
+15,R LV at AC,right
+16,L LV at AC,left
+17,R LV at PC,right
+18,L LV at PC,left
+19,genu of CC,midline
+20,splenium of CC,midline
+21,R AL temporal horn,right
+22,L AL temporal horn,left
+23,R superior AM temporal horn,right
+24,L superior AM temporal horn,left
+25,R inferior AM temporal horn,right
+26,L inferior AM temporal horn,left
+27,R indusium griseum origin,right
+28,L indusium griseum origin,left
+29,R ventral occipital horn,right
+30,L ventral occipital horn,left
+31,R olfactory sulcal fundus,right
+32,L olfactory sulcal fundus,left
