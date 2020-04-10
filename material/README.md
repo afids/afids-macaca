@@ -73,10 +73,10 @@ Anatomical Direction Guide
 ----------------------------
 
 ### **1. AC [midline]**
-  
-> **Name:** 1 <br>
-> **Description:** AC <br>
-> **Acronym:** AC
+
+<br> <b>Name</b>: 1 <br> <b>Description</b>: AC <br> <b>Acronym</b>: AC <img width=200/>| <p align="center"><img src="img/test.png" alt="widget03" width="70%"/></p> |
+:------------------------------------------------|-------------------
+
 
 * Place at the center of the commissure. 
   
