@@ -68,9 +68,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 Anatomical Direction Guide
 --------------------------
-![anatomical_fiducials](./img/anatomical_fiducials.png)
-
-**caveat** this figure displays human anatomy, and updated NHP figure is on the way.
+![anatomical_fiducials](./img/anatomical_fiducials.svg)
 
 ----------------------------
 
