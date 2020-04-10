@@ -68,7 +68,7 @@ To help with monitoring the current location of the pointer, toggle on the **Sli
 
 Anatomical Direction Guide
 --------------------------
-![anatomical_fiducials](./img/anatomical_fiducials.svg)
+![anatomical_fiducials](./img/anatomical_directions.svg)
 
 ----------------------------
 
