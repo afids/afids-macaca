@@ -66,6 +66,12 @@ Copy points from the **ACPC** markups list to the **Fid32\_[VolumeID]\_[Contrast
 
 To help with monitoring the current location of the pointer, toggle on the **Slice intersection** under **Toggle crosshair visibility**.
 
+Anatomical Direction Guide
+--------------------------
+![anatomical_fiducials](./img/anatomical_fiducials.png)
+
+**caveat** this figure displays human anatomy, and updated NHP figure is on the way.
+
 ----------------------------
 
 ### **1. AC [midline]**
