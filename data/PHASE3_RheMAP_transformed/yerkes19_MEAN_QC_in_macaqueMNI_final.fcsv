@@ -33,4 +33,3 @@ vtkMRMLMarkupsFiducialNode_29,13.829,-22.612,1.021,0,0,0,1,1,1,0,29,R ventral oc
 vtkMRMLMarkupsFiducialNode_30,-14.544,-22.969,0.058,0,0,0,1,1,1,0,30,L ventral occipital horn,vtkMRMLScalarVolumeNode1
 vtkMRMLMarkupsFiducialNode_31,4.839,12.189,3.401,0,0,0,1,1,1,0,31,R olfactory sulcal fundus,vtkMRMLScalarVolumeNode1
 vtkMRMLMarkupsFiducialNode_32,-5.064,12.074,3.057,0,0,0,1,1,1,0,32,L olfactory sulcal fundus,vtkMRMLScalarVolumeNode1
-vtkMRMLMarkupsFiducialNode_32,-5.064,12.074,3.057,0,0,0,1,1,1,0,32,L olfactory sulcal fundus,vtkMRMLScalarVolumeNode1
