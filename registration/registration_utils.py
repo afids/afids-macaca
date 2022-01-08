@@ -9,7 +9,7 @@ affine_SyN_script = os.path.join(code_dir, "antsRegistration_affine_SyN.sh")
 ## within the above script point to the correct path
 
 
-def register_linear(moving, target, out_basename, transform="Rigid", initialize=0):
+def register_linear(moving, target, out_basename, transform="Rigid", initialize=None):
     """Linearly registers moving image to target image
 
     Parameters
@@ -28,6 +28,7 @@ def register_linear(moving, target, out_basename, transform="Rigid", initialize=
         0 - geometric centers (default)
         1 - image intensity centers
         2 - image coordinate origins
+        If None (default), none of the above are performed
 
     Return
     ------
@@ -44,7 +45,6 @@ def register_linear(moving, target, out_basename, transform="Rigid", initialize=
         moving_image=moving,
         output_transform_prefix=f"{out_basename}{transform}_",
         output_warped_image=f"{out_basename}{transform}_Transformed.nii.gz",
-        initial_moving_transform_com=initialize,
         winsorize_lower_quantile=0.05,
         winsorize_upper_quantile=0.95,
         interpolation="Linear",
@@ -63,7 +63,8 @@ def register_linear(moving, target, out_basename, transform="Rigid", initialize=
         smoothing_sigmas=[[3, 2, 1]],
         sigma_units=["vox"],
     )
-
+    if initialize is not None:
+        rgstr.inputs.initial_moving_transform_com = initialize
     rgstr.run()
 
 
@@ -224,7 +225,7 @@ def overlay_contours(base, overlay, plot_title="subject-on-template", save_plot=
     """
 
     display = plotting.plot_anat(
-        base, display_mode="ortho", title=plot_title, draw_cross=False, annotate=False
+        base, display_mode="ortho", title=plot_title, cut_coords=[0, 0, 0]
     )
     display.add_contours(overlay)
 
