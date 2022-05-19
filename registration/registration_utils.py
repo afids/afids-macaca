@@ -191,7 +191,7 @@ def combine_transforms(
     # for checking registration success
     trans1 = ants.ApplyTransforms(
         input_image=moving,
-        output_image=f"{out_basename}_Composite_Transformed.nii.gz",
+        output_image=f"{out_basename}Composite_Transformed.nii.gz",
         reference_image=target,
         transforms=f"{out_basename}CompositeWarp.nii.gz",
         dimension=3,
@@ -199,7 +199,7 @@ def combine_transforms(
     trans1.run()
 
     trans2 = ants.ApplyTransforms(
-        output_image=f"{out_basename}_InverseComposite_Transformed.nii.gz",
+        output_image=f"{out_basename}InverseComposite_Transformed.nii.gz",
         input_image=target,
         reference_image=moving,
         transforms=f"{out_basename}InverseCompositeWarp.nii.gz",
