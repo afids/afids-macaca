@@ -236,7 +236,7 @@ def overlay_contours(base, overlay, plot_title="subject-on-template", save_plot=
         plt.draw()
 
 
-def transform_fcsv(input_fcsv, output_fcsv, transform, invert=0):
+def transform_fcsv(input_fcsv, output_fcsv, transform, invert=0, reset_origin=None):
     '''Applies ANTs transform to 3D slicer fcsv file in 3 steps:
         
     1. Slicer fcsv (RAS) is converted to ANTs-compatible (LPS) csv
@@ -250,6 +250,8 @@ def transform_fcsv(input_fcsv, output_fcsv, transform, invert=0):
     ouput fcsv: path to output Slicer fcsv file
     transform: path to ANTs transform file (either linear .mat or .nii.gz warp)
     invert: if 1, linear .mat is inverted
+    reset_origin: a set of x,y,z coordinates to reset the origin of `input_fcsv`
+        before transformation. If None (default), the origin of `input_fcsv` is used.
     '''
 
     # get output directory
@@ -258,12 +260,20 @@ def transform_fcsv(input_fcsv, output_fcsv, transform, invert=0):
     orig_csv = os.path.join(output_dir, 'tmp_orig.csv')
     transformed_csv = os.path.join(output_dir, 'tmp_transformed.csv')
 
-    # convert Slicer RAS oriented FCSV (default)
-    # to Ants LPS oriented format (expected orientation)
-    # use with CAUTION: orientation flips here
+    # Import coords from fcsv file
     df = pd.read_csv(input_fcsv, skiprows=2)
     coords = df[['x', 'y', 'z']].copy()
     coords.loc[:, 't'] = np.zeros(len(coords)) # add a 4th dimension of zeros 
+
+    # Reset coordinate origin if requested
+    if reset_origin is not None:
+        coords.loc[:, 'x'] = coords.loc[:, 'x'] - reset_origin[0]
+        coords.loc[:, 'y'] = coords.loc[:, 'y'] - reset_origin[1]
+        coords.loc[:, 'z'] = coords.loc[:, 'z'] - reset_origin[2]
+
+    # convert Slicer RAS oriented FCSV (default)
+    # to Ants LPS oriented format (expected orientation)
+    # use with CAUTION: orientation flips here
     coords.loc[:, 'x'] = -1 * coords['x'] # flip orientation in x
     coords.loc[:, 'y'] = -1 * coords['y'] # flip orientation in y
     coords.to_csv(orig_csv, index=False, float_format='%.3f')
