@@ -1,0 +1,11 @@
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy<2.0
+  - pandas
+  - matplotlib
+  - jupyter
+  - nilearn
+  - nipype
