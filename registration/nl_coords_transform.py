@@ -469,6 +469,8 @@ class coords_transform:
          print("ERROR: could not write final transformed coordinates")
          return 1
 
+      return 0 # successful return
+
    def ready_for_action(self):
       """perform any final tests before execution"""
       if self.inwarp == "":
