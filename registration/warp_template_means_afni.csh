@@ -54,7 +54,7 @@ foreach dset ( $indsets )
 
       # apply the transformation
       nl_coords_transform.py -infile $dset -inwarp "$inwarp"  \
-        -orient LPI -xyzcol_start 1 -prefix $outprefix $invwarp
+        -orient LPI -xyzcol_start 1 -prefix $outprefix $invwarp -slowinv
    end
    # advance to next space of input dataset
    @ dseti ++ 
