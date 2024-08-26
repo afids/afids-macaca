@@ -368,10 +368,10 @@ class coords_transform:
 
       try:
          infileptr = open(infile,'r')
-         #print("Able to open infile %s" % infile)
+         print("Able to open infile %s" % infile)
          # templines = infileptr.readlines()
          fxyzptr = open(fxyzname,"w")
-         #print("Able to open output file %s" % fxyzname)
+         print("Able to open output file %s" % fxyzname)
          for templine in infileptr :
             #print("about to read line")
             #templine = infileptr.readline()
@@ -381,17 +381,19 @@ class coords_transform:
                self.headerlines += [templine]
             else : # split on spaces, commas or some specified delimiter
                tls = templine.split(self.delim)
-               self.nonheadlist += [templine]
 
-               tlsx = float( tls[self.xcol] )
-               tlsy = float( tls[self.ycol] )
-               tlsz = float( tls[self.zcol] )
-               if (self.inorient == "LPI"):
-                  tlsx = -tlsx
-                  tlsy = -tlsy
-               # write xyz coordinates to temporary xyz file with space delimiter
-               fxyzptr.write("%f %f %f\n" % (tlsx, tlsy, tlsz))
-
+               try:
+                   tlsx = float( tls[self.xcol] )
+                   tlsy = float( tls[self.ycol] )
+                   tlsz = float( tls[self.zcol] )
+                   if (self.inorient == "LPI"):
+                      tlsx = -tlsx
+                      tlsy = -tlsy
+                   # write xyz coordinates to temporary xyz file with space delimiter
+                   fxyzptr.write("%f %f %f\n" % (tlsx, tlsy, tlsz))
+                   self.nonheadlist += [templine] 
+               except: # float conversion failed, probably NA in xyz field
+                   self.headerlines += [templine]
          fxyzptr.close()
 
          infileptr.close()
