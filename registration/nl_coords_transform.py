@@ -51,6 +51,10 @@ The output is decorated similarly to the input for the fcsv input.
       -slowinv                  : do slow inverse of warp (INV) instead of default
                                   fast way with 3dNwarpApply's iwarp option 
                                   (minutes vs seconds)     
+      -splitaff                 : split off affine transformation. This can be
+                                  much faster and use far less memory if the
+                                  translation transformation is far from the
+                                  template
       -xyzcol_start nn          : column in the input file for the xyz columns
                                   Assumed that x column, y column and z column are
                                   consecutive
@@ -116,7 +120,8 @@ class coords_transform:
       self.inwarp          = None
       self.invwarp         = ""    # don't invert the warp by default
       self.slowinv         = None
-
+      self.splitaff        = None  # don't split the affine xform by default
+ 
       # general variables
       self.verb            = verb
       self.delim           = ''    # delimiter - leave empty for now, 
@@ -127,6 +132,8 @@ class coords_transform:
       self.inorient        = "LPI"
       self.fxyzname        = "tempxyzin.1D"
       self.xfxyzname       = "xformxyzout.1D"
+      self.fxyzname_aff    = "tempxyzin_aff.1D"
+      self.xfxyzname_aff   = "xformxyzout_aff.1D"
       self.xyzcol_start    = 0
       self.xcol            = 0
       self.ycol            = 1
@@ -176,10 +183,31 @@ class coords_transform:
       self.valid_opts.add_opt('-slowinv', 0, [],
                       helpstr='flag to use slow inverse warp')
 
+      self.valid_opts.add_opt('-splitaff', 0, [],
+                      helpstr='flag to do affine separately')
+
       self.valid_opts.add_opt('-verb', 1, [], 
                       helpstr='set the verbose level (default is 1)')
 
       return 0
+
+   # return affine, nonlinear warp strings 
+   def split_warp(self, warp_string):
+      """given input of warp_string, return affine and invert warp
+         strings separately.
+         example: 'my_affxform.1D my_nlxform_WARP.nii.gz' as input
+         returns  'my_affxform.1D', 'my_nlxform_WARP.nii.gz' """
+      # split warp string based on spaces
+      tsl = warp_string.split()
+
+      # affine warps end in .1D
+      if '.1D' in tsl[0]:
+         # return affine and nonlinear warps as two strings
+         return tsl[0], tsl[1]
+      else:
+         # order is opposite
+         return tsl[1], tsl[0]
+
 
    def invert_warp(self, warp_string):
       """given input of warp_string, return invert warp string
@@ -274,6 +302,9 @@ class coords_transform:
          elif opt.name == '-slowinv':
             self.slowinv = 1
 
+         elif opt.name == '-splitaff':
+            self.splitaff = 1
+
          elif opt.name == '-delim':
             val, err = uopts.get_string_opt('', opt=opt)
             if val != None and err: return -1
@@ -321,6 +352,8 @@ class coords_transform:
          # to allow parallel computation across multiple runs
          self.fxyzname        = "tempxyzin_%s.1D" % self.prefix
          self.xfxyzname       = "xformxyzout_%s.1D" % self.prefix
+         # output (next input) naming if affine is needed too
+         self.xfxyzname_aff   = "xformxyzout_%s_aff.1D" % self.prefix
 
          # ll = len(self.infile)
          pp = self.infile.endswith(('.csv','.fcsv'))
@@ -401,6 +434,32 @@ class coords_transform:
       except:
          print("ERROR: could not read input coordinate file")
          return 1
+
+      # if transformation is done in two steps,split the affine and
+      # nonlinear warps and do the initial affine transformation
+      # with Vecwarp. That output is the new input for nonlinear warping
+      if(self.splitaff):
+         self.aff, self.nlwarp = self.split_warp(warp_string=self.inwarp)
+
+         # this should be opposite 3dNwarpXYZs directions
+         if(self.invwarp):
+            dir = "-backward"
+         else:
+            dir = "-forward"
+
+         com = BASE.shell_com(  
+          # apply affine only to xyz 
+          "Vecwarp -matvec %s %s -input %s -output %s" %
+          (self.aff, dir, self.fxyzname, self.xfxyzname_aff),
+             self.oexec)
+          # the output from Vecwarp is the new input for 3dNwarpXYZ
+         self.fxyzname = self.xfxyzname_aff
+         self.inwarp = self.nlwarp
+         print("Running %s" % com.com)
+         # if this fails, notify the user
+         if com.run():
+            print("ERROR: Vecwarp failed")
+            return 1
 
       try:
          # we can do this the slow way or the easy way

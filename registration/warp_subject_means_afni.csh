@@ -5,7 +5,9 @@
 # output includes all transformed lists labeled with input and output spaces
 
 # list of input fcsv files with labeled coordinates
-set indset_dir = "/Users/glend/afids-macaca/data/PHASE2_output_afid_postQC_for_PHASE3"
+# repeating with different directory until we set which one is the correct one
+#set indset_dir = "/Users/glend/afids-macaca/data/PHASE2_output_afid_postQC_for_PHASE3"
+set indset_dir = "/Users/glend/afids-macaca/data/PHASE2_output_afid_postQC"
 
 set space = NMTv2.0asym
 
@@ -39,6 +41,8 @@ foreach sub ( $subs )
    set inwarp = "${subject_warp_dir}/$awdir/${sub}_composite_linear_to_template_inv.1D ${subject_warp_dir}/$awdir/${sub}_shft_WARPINV.nii.gz"
  
    # apply the transformation
+   # splitting off the affine transformation now because 
+   # it consumes vast amounts of memory
    nl_coords_transform.py -infile $dset -inwarp "$inwarp"  \
-     -orient LPI -xyzcol_start 1 -prefix $outprefix $invwarp
+     -orient LPI -xyzcol_start 1 -prefix $outprefix $invwarp -splitaff
 end
