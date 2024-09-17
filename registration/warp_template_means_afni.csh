@@ -6,11 +6,11 @@
 
 # list of input fcsv files with labeled coordinates
 set indsets = ( \
-  ~/AFIDS_macaca/afids-macaca/data/PHASE0_output_afid/nmtv1.3_MEAN.fcsv \
-  ~/AFIDS_macaca/afids-macaca/data/PHASE0_output_afid/d99_MEAN.fcsv \
-  ~/AFIDS_macaca/afids-macaca/data/PHASE0_output_afid/macaqueMNI_MEAN.fcsv \
-  ~/AFIDS_macaca/afids-macaca/data/PHASE0_output_afid/yerkes19_MEAN.fcsv \
-  ~/AFIDS_macaca/afids-macaca/data/PHASE0_output_afid/inia19_MEAN.fcsv \
+  ~/AFIDS_macaca_data/afids-macaca/data/PHASE0_output_afid/nmtv1.3_MEAN.fcsv \
+  ~/AFIDS_macaca_data/afids-macaca/data/PHASE0_output_afid/d99_MEAN.fcsv \
+  ~/AFIDS_macaca_data/afids-macaca/data/PHASE0_output_afid/macaqueMNI_MEAN.fcsv \
+  ~/AFIDS_macaca_data/afids-macaca/data/PHASE0_output_afid/yerkes19_MEAN.fcsv \
+  ~/AFIDS_macaca_data/afids-macaca/data/PHASE0_output_afid/inia19_MEAN.fcsv \
 )
 
 # make list to match the datasets above
@@ -37,15 +37,16 @@ foreach dset ( $indsets )
       set outprefix = ${base_space}_to_${space}_MEAN.fcsv
 
       # find warp between the spaces
-      # try forward direction
+      # try forward direction - requires *inverse* according
+      # the way 3dNwarpXYZ uses the warp
       if -e ${template_warp_dir}/aw_${base_space}_to_${space}  then
          set awdir = aw_${base_space}_to_${space}
-         set invwarp = ""
+         set invwarp = "-invwarp"
          set inspace = $base_space
-      # may have to invert the warp in the string
+      # uses warp without inverting (see 3dNwarpXYZ -help)
       else
          set awdir = aw_${space}_to_${base_space}
-         set invwarp = "-invwarp"
+         set invwarp = ""
          set inspace = $space
       endif
 
@@ -53,7 +54,7 @@ foreach dset ( $indsets )
 
       # apply the transformation
       nl_coords_transform.py -infile $dset -inwarp "$inwarp"  \
-        -orient LPI -xyzcol_start 1 -prefix $outprefix $invwarp
+        -orient LPI -xyzcol_start 1 -prefix $outprefix $invwarp -slowinv
    end
    # advance to next space of input dataset
    @ dseti ++ 
